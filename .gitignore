@@ -1,0 +1,67 @@
+# Learn more https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files
+
+# dependencies
+node_modules/
+
+# Expo
+.expo/
+dist/
+web-build/
+expo-env.d.ts
+
+# Native
+*.orig.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.keystore
+local.properties
+
+# Android build/cache artifacts
+android/.gradle/
+android/.kotlin/
+android/build/
+android/app/build/
+android/local.properties
+android/**/*.apk
+android/**/*.aab
+android/app/debug.keystore
+
+# Metro
+.metro-health-check*
+
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
+
+# macOS
+.DS_Store
+*.pem
+
+# local env files
+.env
+.env.*
+.env*.local
+
+# typescript
+*.tsbuildinfo
+
+# Secrets & Keys (Added for security)
+# google-services.json / GoogleService-Info.plist 은 EAS Build 업로드에 포함되어야 하므로
+# .gitignore에서 제외하지 않는다 (.gitignore에 있으면 강제 커밋해도 EAS가 업로드에서 빼버림).
+secrets.js
+config.js
+
+
+*.ipa
+build-*.ipa
+
+# 포트폴리오 공개 스냅샷: Firebase 설정·로컬 에디터/에이전트 설정 제외
+google-services.json
+android/app/google-services.json
+GoogleService-Info.plist
+.claude/
+.vscode/

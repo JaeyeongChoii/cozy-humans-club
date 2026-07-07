@@ -1,0 +1,33 @@
+## Android local notification test
+
+Requires:
+- JDK 17
+--
+Expo/React Native Android 빌드는 JDK가 필요합니다. Windows에서는 Temurin JDK 17 추천합니다.
+https://adoptium.net/temurin/releases/?version=17
+
+설치한뒤 PowerShell 새로 열고 확인
+`java -version`
+--
+- Android Studio / Android SDK
+- Physical Android device with USB debugging enabled
+
+PowerShell:
+
+```powershell // 현재 PowerShell 창에서만 임시 적용되는 코드
+$env:ANDROID_HOME="$env:LOCALAPPDATA\Android\Sdk"
+$env:ANDROID_SDK_ROOT="$env:LOCALAPPDATA\Android\Sdk"
+$env:Path="$env:Path;$env:ANDROID_HOME\platform-tools"
+```
+
+Android 폰 연결
+폰에서:개발자 옵션 켜기, USB 디버깅 켜기, PC 연결 후 “USB 디버깅 허용” 승인
+
+```powershell
+adb devices
+
+// 정상출력 후
+npx.cmd expo run:android
+
+npx expo start --dev-client -c
+```

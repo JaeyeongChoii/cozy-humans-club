@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "Cozy Humans' Club",
+    "slug": "cozy-humans-club",
+    "scheme": "deeptalk",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSPhotoLibraryAddUsageDescription": "앱이 사진을 저장하기 위해 앨범 접근 권한이 필요합니다.",
+        "ITSAppUsesNonExemptEncryption": false
+      },
+      "bundleIdentifier": "com.cozyhumansclub.app"
+    },
+    "android": {
+      "package": "com.cozyhumansclub.app",
+      "googleServicesFile": "./google-services.json",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "eeca6830-9d36-497a-9de6-72e803a7e9a5"
+      }
+    },
+    "plugins": [
+      "expo-font"
+    ]
+  }
+}
